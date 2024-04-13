@@ -1,0 +1,19 @@
+/* InfoCard.css */
+.infoCard {
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .infoCardHeader {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .infoCardContent {
+    padding: 1rem;
+  }
+  
