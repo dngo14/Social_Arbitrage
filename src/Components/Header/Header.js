@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {AppBar, Box, Typography, Toolbar, Button, IconButton, List, ListItem, ListItemButton, Drawer, ListItemText} from "@mui/material/"
+import {AppBar, Box, Typography, Toolbar, Button, IconButton, List, ListItem, ListItemButton, Drawer, ListItemText, Divider} from "@mui/material/"
 import MenuIcon from '@mui/icons-material/Menu';
 import "./Header.css"
+import SearchBar from './SearchBar';
 
 function Header() {
 const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -47,9 +48,13 @@ const toggleDrawer = (open) => (event) => {
           >
             <MenuIcon />
           </IconButton>
+          <Divider orientation="vertical" variant="middle" flexItem style={{backgroundColor: "white", marginRight: 10}}></Divider>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Social Arbitrage
           </Typography>
+          <Typography>Search Ticker</Typography>
+          <Divider orientation="vertical" variant="middle" flexItem style={{backgroundColor: "white", margin: 10}}></Divider>
+          <SearchBar></SearchBar>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -59,6 +64,7 @@ const toggleDrawer = (open) => (event) => {
       >
         {list()}
       </Drawer>
+      
     </React.Fragment>
   );
 }

@@ -1,0 +1,41 @@
+.search-bar-container {
+    position: relative;
+    width: 250px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 150px; /* Adjust as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option-item {
+    padding: 0;
+}
+
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.option-button:hover {
+    background-color: #f0f0f0;
+}
