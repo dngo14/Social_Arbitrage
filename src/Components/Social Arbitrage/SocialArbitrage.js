@@ -51,7 +51,9 @@ function SocialArbitrage() {
   }
 
     return (
-      <p>hi</p>
+        <div style={{ height: '1065px', width: '750px', margin: "10px", backgroundColor: "red" }}>
+          <h1>hi</h1>
+        </div>
     );
   }
   
